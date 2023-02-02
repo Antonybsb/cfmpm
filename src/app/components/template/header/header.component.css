@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    background-color: rgb(100, 210, 255);
+    height: 50px;
+    padding: 10px;
+}
+
+.header .sair {
+    align-items: flex-end;
+}
+
+.pesquisa {
+    display: flex;
+}
+
+.pesquisa .divisao {
+    margin-left: 10px;
+}
+
+.pesquisa .buscar {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.tables {
+    height: 300px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 15px;
+}
+
