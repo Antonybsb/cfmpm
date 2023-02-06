@@ -1,0 +1,31 @@
+<table mat-table [dataSource]="tabela" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Nome </th>
+      <td mat-cell *matCellDef="let tabela"> {{ tabela.name }} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="diaSemana">
+      <th mat-header-cell *matHeaderCellDef> Dia da Semana </th>
+      <td mat-cell *matCellDef="let tabela"> {{ tabela.diaSemana }} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="divisao">
+      <th mat-header-cell *matHeaderCellDef> Divisão </th>
+      <td mat-cell *matCellDef="let tabela"> {{ tabela.divisao }} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="tipoAfastamento">
+      <th mat-header-cell *matHeaderCellDef> Tipo de Afastamento </th>
+      <td mat-cell *matCellDef="let tabela"> {{ tabela.tipoAfastamento }} </td>
+    </ng-container>
+
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
